@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 // los enums
 // permiten definir un conjunto  de constantes con nombres bajo un mismo
@@ -19,6 +18,9 @@ int main() {
   if (hoy == Sabado) {
     std::cout << "Me cago no es sabado!!! \n";
   }
+
+  enum class dayTwo { Lunes, Martes, Miercoles, Jueves, Viernes };
+  dayTwo d2 = dayTwo::Lunes;
 
   // scoped enums aqui estan confinados a scoped de nombres
   enum class day { Lunes, Martes, Miercoles, Jueves, Viernes };
@@ -55,7 +57,7 @@ int main() {
   daisy::tue == daisy::mon;
 
   if (daisy1 == daisy::mon && daisy1 == daisy::tue) {
-    std::cout << "mierda entre los dos"
+    std::cout << "mierda entre a los dos"
               << "\n";
   }
 }
