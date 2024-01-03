@@ -4,7 +4,7 @@
 #define PI 3.14159265
 #define MAX(a,b) ((a) > (b) ? (a) : (b))
 
-#define forIt(a,b) for(int (a):(b))
+#define forVec(a,b) for(int (a):(b))
 
 
 int main () {
@@ -19,7 +19,7 @@ int main () {
 	for (int x: v1){
 		std::cout<<x<<"\n";
 	}
-	forIt(x, v1){
+	forVec(x, v1){
 		std::cout<<x<<"\n";
 	}
 

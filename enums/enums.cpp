@@ -54,7 +54,7 @@ int main() {
   int valorRandom = 0;
   daisy daisy1 = static_cast<daisy>(valorRandom);
 
-  daisy::tue == daisy::mon;
+  /* daisy::tue == daisy::mon; */
 
   if (daisy1 == daisy::mon && daisy1 == daisy::tue) {
     std::cout << "mierda entre a los dos"
