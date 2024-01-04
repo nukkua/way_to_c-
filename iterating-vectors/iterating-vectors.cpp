@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
 
-
 inline void printVector (std::vector<int> entryVector){
 	std::cout<<"Last vector"<<"\n";
 	for (unsigned char x:entryVector){
 		std::cout<<static_cast<int>(x)<<" ";
 	}
 }
+
 
 /* tengo el unsigned, const, auto, char, short, int, double, float,long, long long, inline, typedef, #define, using name = type */
 
@@ -16,7 +16,8 @@ int main () {
 	// Por mas que en el type char entren los numeros 
 	// los esta conviertiendo a su equivalente en ASCII
 	// por lo tanto static_cast<int>("variable")
-
+	
+	std::vector<int> mierdaOptimizada = {1,2,3,4,5,6,7};
 	//COUT
 	
 	// Const pq no voy a hacer nada, solo mostrar
@@ -24,6 +25,14 @@ int main () {
 	for (const unsigned char x:copyOfAVector){
 		std::cout<<(&x)<<" "; // & simple puntero
 	}
+	// Puedo optimizar mas el codigo utilizando una referencia
+	// a los valores
+
+	std::cout<<"looping with the references, without making a copy \n";
+	for(const unsigned char &x: mierdaOptimizada){
+		std::cout<<static_cast<int>(x)<<" ";
+	}
+
 	// Aqui si puedo modificar los valores picadooooo
 	std::cout<<"\n looping with char x \n";
 	printVector(copyOfAVector);
@@ -35,9 +44,11 @@ int main () {
 	// pq estaria tratando de modificar el valor del puntero
 	// likeeee wtff??????? soy gil
 	// y si o si o auto si no se el tipo, o el tipo original del vector, no se le puede poner const
+
 	for(auto& x: copyOfAVector){
 		std::cin>>x;
 	}
+
 	printVector(copyOfAVector);
 
 

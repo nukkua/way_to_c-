@@ -2,6 +2,8 @@
 #include <vector>
 
 
+#define PI 3.14159265
+
 #define forVec(a,b) for(int (a):(b))
 using vInt = std::vector<int>; // es la forma moderna de un typedef, la forma no ruca de hacer typedefinitions
 
