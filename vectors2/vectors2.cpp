@@ -16,6 +16,7 @@ int main () {
 	vInt v1 {1,2,3,4,5};
 
 	
+	vInt copy {1,2,3,4} ;
 	forVec(i, v1){
 		std::cout<<i<<"\n";
 	}
@@ -43,6 +44,9 @@ int main () {
 	std::cout<<v2.capacity()<<"\n";
 	v2.reserve(100);
 	
+	std::cout<<"Capacity at the start"<<copy.capacity()<<"\n";
+	copy.push_back(12);
+	std::cout<<"Capacity at the end"<<copy.capacity()<<"\n";
 
 
 
