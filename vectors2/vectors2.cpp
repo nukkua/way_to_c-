@@ -12,11 +12,11 @@ int main () {
 	/* int v1[10] = {1,2,3,4,5,6,7,8,9,10}; */
 	/* OG form */
 
-
+	vInt v10(10);
 	vInt v1 {1,2,3,4,5};
 
 	
-	vInt copy {1,2,3,4} ;
+	vInt copy {1,2,3,4,5} ;
 	forVec(i, v1){
 		std::cout<<i<<"\n";
 	}

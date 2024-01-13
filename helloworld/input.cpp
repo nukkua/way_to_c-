@@ -9,7 +9,7 @@ int main() {
   short bit16;
   int bit32;
   long bit64;
-  long bit128;
+  long long bit128;
 
   float f32bit;
   double f64bit;
@@ -27,5 +27,4 @@ int main() {
   unsigned int value = 10;
 
   int value2 = value;
-	
 }
