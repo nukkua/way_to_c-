@@ -1,60 +1,59 @@
 #include <iostream>
 #include <vector>
 
-inline void printVector (std::vector<int> entryVector){
-	std::cout<<"Last vector"<<"\n";
-	for (unsigned char x:entryVector){
-		std::cout<<static_cast<int>(x)<<" ";
-	}
+inline void printVector(std::vector<int> entryVector) {
+  std::cout << "Last vector"
+            << "\n";
+  for (unsigned char x : entryVector) {
+    std::cout << static_cast<int>(x) << " ";
+  }
 }
 
+/* tengo el unsigned, const, auto, char, short, int, double, float,long, long
+ * long, inline, typedef, #define, using name = type */
 
-/* tengo el unsigned, const, auto, char, short, int, double, float,long, long long, inline, typedef, #define, using name = type */
+int main() {
+  std::vector<int> copyOfAVector{65, 2, 3, 4, 5};
+  // Por mas que en el type char entren los numeros
+  // los esta conviertiendo a su equivalente en ASCII
+  // por lo tanto static_cast<int>("variable")
+  std::vector<int> mierdaOptimizada = {1, 2, 3, 4, 5, 6, 7};
+  // COUT
 
-int main () {
-	std::vector<int>copyOfAVector {65,2,3,4,5};
-	// Por mas que en el type char entren los numeros 
-	// los esta conviertiendo a su equivalente en ASCII
-	// por lo tanto static_cast<int>("variable")
-	
-	std::vector<int> mierdaOptimizada = {1,2,3,4,5,6,7};
-	//COUT
-	
-	// Const pq no voy a hacer nada, solo mostrar
-	std::cout<<"looping with auto const x \n";
-	for (const unsigned char x:copyOfAVector){
-		std::cout<<(&x)<<" "; // & simple puntero
-	}
-	// Puedo optimizar mas el codigo utilizando una referencia
-	// a los valores
+  // Const pq no voy a hacer nada, solo mostrar
+  std::cout << "looping with auto const x \n";
+  for (const unsigned char x : copyOfAVector) {
+    std::cout << (&x) << " "; // & simple puntero
+  }
+  // Puedo optimizar mas el codigo utilizando una referencia
+  // a los valores
 
-	std::cout<<"looping with the references, without making a copy \n";
-	for(const unsigned char &x: mierdaOptimizada){
-		std::cout<<static_cast<int>(x)<<" ";
-	}
+  std::cout << "looping with the references, without making a copy \n";
+  for (const unsigned char &x : mierdaOptimizada) {
+    std::cout << static_cast<int>(x) << " ";
+  }
+  // Aqui si puedo modificar los valores picadooooo
+  std::cout << "\n looping with char x \n";
+  printVector(copyOfAVector);
 
-	// Aqui si puedo modificar los valores picadooooo
-	std::cout<<"\n looping with char x \n";
-	printVector(copyOfAVector);
+  // CIN
 
-	//CIN
-	
-	// Bueno ahora para ingresar datos, supongo que al puntero nooooooo?????
-	// ya se por que no se puede ir al revez
-	// pq estaria tratando de modificar el valor del puntero
-	// likeeee wtff??????? soy gil
-	// y si o si o auto si no se el tipo, o el tipo original del vector, no se le puede poner const
+  // Bueno ahora para ingresar datos, supongo que al puntero nooooooo?????
+  // ya se por que no se puede ir al revez
+  // pq estaria tratando de modificar el valor del puntero
+  // likeeee wtff??????? soy gil
+  // y si o si o auto si no se el tipo, o el tipo original del vector, no se le
+  // puede poner const
 
-	for(auto& x: copyOfAVector){
-		std::cin>>x;
-	}
+  for (auto &x : copyOfAVector) {
+    std::cin >> x;
+  }
 
-	printVector(copyOfAVector);
-
-
+  printVector(copyOfAVector);
 }
 // el type auto no puede ser unsigned
 
-
 /* Bueno hay una diferencia clara entre puntero y referencia */
-/* la referencia no puede cambiar, es la posicion de memoria de un objeto, el puntero es la posicion de memoria de un objeto pero puede apuntar a otra objeto */
+/* la referencia no puede cambiar, es la posicion de memoria de un objeto, el
+ * puntero es la posicion de memoria de un objeto pero puede apuntar a otra
+ * objeto */

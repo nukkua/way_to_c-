@@ -7,18 +7,15 @@
 int main() {
   std::cout << "Hello motherfucker"
             << "\n";
-
   // unscoped enums por la ausencia de la palabra class
   // esto puede provocar colisiones de nombres de enums
-  // Aqui dia es un nuevo tipo de dato y, Lunes, Martes, etc son los posibles
-  // valores que puede tomar el dia
+  // Aqui dia es un nuevo tipo de dato y, Lunes, Martes, etc son los
+  // posibles valores que puede tomar el dia
   enum Dia { Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo };
   Dia hoy = Sabado;
-
   if (hoy == Sabado) {
     std::cout << "Me cago no es sabado!!! \n";
   }
-
   enum class dayTwo { Lunes, Martes, Miercoles, Jueves, Viernes };
   dayTwo d2 = dayTwo::Lunes;
 
