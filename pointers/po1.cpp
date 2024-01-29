@@ -7,6 +7,14 @@ struct Rectangle {
 
 int main() {
   int a = 10;
+
+  struct Rectangle *p2;
+
+  p2 = new struct Rectangle;
+
+  p2->length = 10;
+  p2->breadth = 20;
+
   int *p;
 
   p = &a; // p stores the memory direction of a, with the reference &

@@ -1,4 +1,5 @@
 #include <iostream>
+
 struct Rectangle {
   int length;
   int breadth;
