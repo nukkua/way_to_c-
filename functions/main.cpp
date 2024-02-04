@@ -9,15 +9,12 @@ struct Rectangle {
 };
 
 int area(struct Rectangle *r) {
-  (*r).length = 11;
-  return ((*r).length) * ((*r).breadth);
+  r->length = 15;
+  return (r->length * r->breadth);
 }
-int area2(struct Rectangle r) {
-  r.length = 11;
-  return r.length * r.breadth;
-}
+int area2(struct Rectangle r) { return r.length * r.breadth; }
 int area3(struct Rectangle &r) {
-  r.length = 11;
+  r.length++;
   return r.length * r.breadth;
 }
 

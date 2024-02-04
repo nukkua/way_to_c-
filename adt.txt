@@ -1,0 +1,8 @@
+ADT
+DATA TYPE:
+1. Is defined like something that has meaning. 
+2. And it has operators
+
+
+ADT
+3. Condition -> ist abstract loco, we dont know the intern details of the data type 

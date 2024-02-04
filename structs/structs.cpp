@@ -15,8 +15,8 @@ struct Card {
   int shape;
   int color;
 };
-
 int main() {
+
   /* struct Rectangle r; */
 
   struct Rectangle r = {10, 20};

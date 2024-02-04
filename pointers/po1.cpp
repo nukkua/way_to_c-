@@ -51,8 +51,8 @@ int main() {
   // es la maquina y de ese tamano sera el puntero
 
   char *p1;
-  int *p2;
+  int *p5;
   float *p3;
   double *p4;
-  struct Rectangle *p5;
+  struct Rectangle *p6;
 }
