@@ -28,7 +28,6 @@ public:
 int main() {
   Rectangle r(10, 5);
   std::cout << "Length de r : " << r.area() << "\n";
-  r.changeLength(11);
   std::cout << "Length de r : " << r.area() << "\n";
 
   return 0;
