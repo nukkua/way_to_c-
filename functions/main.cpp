@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#define forVec(a, b) for (const unsigned short(&a) : (b))
+#define forVec(a, b) for (const unsigned short(&a) : (b)) // macro qliao
 
 struct Rectangle {
   int length;

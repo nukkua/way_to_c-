@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <iostream>
 #include <memory>
 
@@ -24,7 +23,7 @@ auto ways_of_creating_pointers_new() -> std::unique_ptr<int> {
 }
 
 int main() {
-  int *nullpointer = nullptr; // lit null pointer
+  /* int *nullpointer = nullptr;  lit null pointer */
 
   int *ptr1 = ways_of_creating_pointers_og();
   (*ptr1)++;
@@ -35,9 +34,8 @@ int main() {
   (*ptr2)++;
   std::cout << "Pointer 2: 12==" << *ptr2 << "\n";
 
-  // using anonymus functions, or lambdas whatever;
-
   auto ania_oficial = [](int ania) -> int { return ania; };
+  std::cout << "ania_oficial " << ania_oficial(10) << "\n";
 
   auto suma = [](int a, int b) -> int { return a + b; };
   std::cout << "using lambdas functions: " << suma(10, 20) << "\n";

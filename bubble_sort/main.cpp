@@ -1,5 +1,4 @@
 #include <iostream>
-#include <utility>
 #include <vector>
 
 int max(std::vector<unsigned int> v) {
