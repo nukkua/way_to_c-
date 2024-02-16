@@ -25,6 +25,7 @@ auto ways_of_creating_pointers_new() -> std::unique_ptr<int> {
 int main() {
   /* int *nullpointer = nullptr;  lit null pointer */
 
+  int a = 10, b = 20;
   int *ptr1 = ways_of_creating_pointers_og();
   (*ptr1)++;
   std::cout << "Pointer 1: 2==" << *ptr1 << "\n";
@@ -37,8 +38,8 @@ int main() {
   auto ania_oficial = [](int ania) -> int { return ania; };
   std::cout << "ania_oficial " << ania_oficial(10) << "\n";
 
-  auto suma = [](int a, int b) -> int { return a + b; };
-  std::cout << "using lambdas functions: " << suma(10, 20) << "\n";
+  auto suma = [a](int &c, int &b) noexcept -> int { return c + b + a; };
+  std::cout << "using lambdas functions: " << suma(a, b) << "\n";
 
   return 0;
 }

@@ -6,7 +6,7 @@
 #define forVec(a, b) for (int(a) : (b))
 using vInt = std::vector<int>; // es la forma moderna de un typedef, la forma no
                                // ruca de hacer typedefinitions
-using nameUan = int;
+using entero = int;
 
 int main() {
   /* int v1[10] = {1,2,3,4,5,6,7,8,9,10}; */

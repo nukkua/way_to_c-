@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 template <class T> class Arithmetic {
 private:

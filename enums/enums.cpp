@@ -1,5 +1,9 @@
 #include <iostream>
 
+inline constexpr auto add(const long long &a, const long long &b) noexcept
+    -> long long {
+  return a + b;
+}
 // los enums
 // permiten definir un conjunto  de constantes con nombres bajo un mismo
 // paraguas
@@ -35,8 +39,6 @@ int main() {
     wed,
     thu,
     fri,
-    sat,
-    sun,
     mtn,
     tte,
     wtd,
@@ -46,10 +48,10 @@ int main() {
     stn,
   };
 
-  int kenum = static_cast<int>(daisy::mon);
+  int kenum = int(daisy::mon);
 
   int valorRandom = 0;
-  daisy daisy1 = static_cast<daisy>(valorRandom);
+  daisy daisy1 = daisy(valorRandom);
 
   /* daisy::tue == daisy::mon; */
 
