@@ -6,7 +6,8 @@
 
 namespace with_attributes {
 constexpr double pow(double x, long long n) noexcept {
-  if (n > 0) [[likely]]
+  if (n > 0) [[likely]] // it says to the compiler to distribute the way to the
+                        // processor
     return x * pow(x, n - 1);
   else [[unlikely]]
     return 1;

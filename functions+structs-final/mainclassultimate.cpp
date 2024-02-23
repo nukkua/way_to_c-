@@ -20,7 +20,7 @@ public:
   ~Rectangle();
 };
 
-inline Rectangle::Rectangle(int l, int b) {
+Rectangle::Rectangle(int l, int b) {
   length = l;
   breadth = b;
 }

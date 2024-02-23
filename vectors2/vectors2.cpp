@@ -2,17 +2,18 @@
 #include <vector>
 
 #define PI 3.14159265
-
 #define forVec(a, b) for (int(a) : (b))
+
 using vInt = std::vector<int>; // es la forma moderna de un typedef, la forma no
                                // ruca de hacer typedefinitions
+
 using entero = int;
 
 int main() {
   /* int v1[10] = {1,2,3,4,5,6,7,8,9,10}; */
   /* OG form */
 
-  nameUan ania = 10;
+  entero ania = 10;
   vInt v10(10);
   vInt v1{1, 2, 3, 4, 5};
 
