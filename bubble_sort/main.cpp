@@ -12,7 +12,7 @@ int max(std::vector<unsigned int> v) {
   return maxi;
 }
 
-int main() {
+auto main() -> int {
   std::vector<unsigned int> v1 = {2, 7, 3, 4, 10};
   int n = v1.size();
   bool band;
