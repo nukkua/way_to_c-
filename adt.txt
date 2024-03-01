@@ -5,4 +5,4 @@ DATA TYPE:
 
 
 ADT
-3. Condition -> ist abstract loco, we dont know the intern details of the data type 
+3. Condition -> its abstract loco, we dont know the intern details of the data type 

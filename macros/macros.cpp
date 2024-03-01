@@ -7,8 +7,7 @@
 #define forVec(a, b) for (int(a) : (b))
 
 int main() {
-  const unsigned int hala = 10; // nunca a un unsigned meterle negativos
-  // Por que te tira cualquier coso choco
+  const unsigned int ala = 10; // nunca a un unsigned meterle negativos
 
   std::vector<int> v1{1, 2, 3, 4, 5};
 

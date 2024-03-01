@@ -4,8 +4,6 @@
 #include <iostream>
 
 int main() {
-  // tengo una relacion-odio con la sintax sugar
-  // fucking clang ctmre deja de decirme que es c++23
 
   std::array<std::size_t, 10> a;
   std::array<int, 10> a1 = {1, 2, 3, 4, 5, 6, 7, 8, 9};

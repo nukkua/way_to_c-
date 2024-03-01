@@ -24,8 +24,7 @@ template <class T> T Arithmetic<T>::sub() {
   c = a - b;
   return c;
 }
-
-int main() {
+auto main() -> int {
   Arithmetic<short> ar1(1, 2);
   std::cout << ar1.add() << "\n";
 
