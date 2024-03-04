@@ -16,6 +16,7 @@ int area(struct Rectangle r) { return r.length * r.breadth; }
 
 int main() {
   struct Rectangle ptr1;
+
   initialize(&ptr1, 10, 5);
   area(ptr1);
   changeLength(&ptr1, 20);

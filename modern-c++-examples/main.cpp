@@ -1,6 +1,9 @@
 #include <iostream>
 #include <memory>
 
+struct Ala {
+  int x, y, z;
+};
 // new and og ways of creating functions
 auto maxi(int n1, int n2) -> int { return std::max(n1, n2); }
 
@@ -41,5 +44,12 @@ int main() {
   auto suma = [a](int &c, int &b) noexcept -> int { return c + b + a; };
   std::cout << "using lambdas functions: " << suma(a, b) << "\n";
 
+  // desestruct
+  struct Ala ala {
+    1, 2, 3
+  };
+  auto [f, d, c] = ala;
+
   return 0;
 }
+//  pq
