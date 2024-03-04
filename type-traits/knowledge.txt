@@ -1,0 +1,2 @@
+CONCEPT:
+En tiempo de compilacion, infiere si el tipo y sus propiedad, trata a los tipos

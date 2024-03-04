@@ -24,9 +24,21 @@ template <class T> T Arithmetic<T>::sub() {
   c = a - b;
   return c;
 }
+
+template <int A = 10, typename T> auto print1(T value) -> void {
+  std::cout << A << " " << value << "\n";
+}
+
+template <typename T> constexpr T pi{3.14159265};
+
 auto main() -> int {
   Arithmetic<short> ar1(1, 2);
   std::cout << ar1.add() << "\n";
+
+  std::string value = "ala";
+
+  print1<11>(value);
+  std::cout << pi<double>;
 
   return 0;
 }
