@@ -26,7 +26,9 @@ public:
 };
 
 int main() {
-  Rectangle r(10, 5);
+
+  Rectangle r(
+      10, 5); // creado en el stack, quiere decir que sale del ambito y muere
   std::cout << "Length de r : " << r.area() << "\n";
   std::cout << "Length de r : " << r.area() << "\n";
 

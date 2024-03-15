@@ -6,7 +6,6 @@
 
 using vInt = std::vector<int>; // es la forma moderna de un typedef, la forma no
                                // ruca de hacer typedefinitions
-
 using entero = int;
 
 int main() {
