@@ -1,5 +1,3 @@
-#include <vector>
-
 template <class T> class Rectangle {
 private:
   int length;
@@ -21,7 +19,10 @@ template <class T> T Rectangle<T>::perimeter() {
 }
 
 int main() {
-  std::vector<int> v1(0);
+  int l = 7;
+  int b = 10;
+  Rectangle<int> r(l, b);
+  Rectangle<int> *ptr = new Rectangle<int>(l, b);
 
   return 0;
 }
