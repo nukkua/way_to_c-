@@ -3,16 +3,10 @@
 // classes: propiedades privadas por defecto o structs propiedades publicas
 
 struct A {
-  void virtual f() {
-    std::cout << "A"
-              << "\n";
-  }
+  void virtual f() { std::cout << "A" << "\n"; }
 };
 struct B final : A { // : -> hereda
-  void f() override {
-    std::cout << "B"
-              << "\n";
-  }
+  void f() override { std::cout << "B" << "\n"; }
 };
 
 auto g(A &a) -> void { a.f(); }

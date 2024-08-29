@@ -2,11 +2,8 @@
 
 constexpr int cxf(int x) { return x * 2; }
 
-int main() {
-  std::cout << "Hello World!"
-            << "\n";
+auto main() -> int {
+  std::cout << "Hello World!" << "\n";
   constexpr int i = cxf(2);
   std::cout << i << "\n";
 }
-
-// se ejecuta en tiempo de compilacion

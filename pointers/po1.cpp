@@ -21,8 +21,7 @@ int main() {
 
   std::cout << *p << " Using the pointer"
             << "\n"; // then access the actual value
-  std::cout << a << " Using the value"
-            << "\n";
+  std::cout << a << " Using the value" << "\n";
 
   // we have malloc, that stores something in the heap
   // and how we access external resources of the program,

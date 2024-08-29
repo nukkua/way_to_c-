@@ -28,9 +28,6 @@ Rectangle::Rectangle(int l, int b) {
 int Rectangle::area() { return length * breadth; }
 
 int Rectangle::perimeter() { return 2 * (length + breadth); }
-Rectangle::~Rectangle() {
-  std::cout << "Destructor executed"
-            << "\n";
-}
+Rectangle::~Rectangle() { std::cout << "Destructor executed" << "\n"; }
 
 int main() { return 0; }

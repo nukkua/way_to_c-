@@ -1,10 +1,9 @@
-#include <iostream>
 #include <print>
-inline auto ala() noexcept -> void { std::cout << "ala" << "ala2"; }
 
 auto main() -> int {
-  std::print("{} hi", 9);
-  ala();
+  std::print("{}+{}={}", 9, 10, 19);
+
+  std::print("{0}+{2}={1}", 9, 19, 10);
 
   return 0;
 }

@@ -9,8 +9,7 @@ auto print_with_string_view(std::string_view ala) -> void {
 }
 
 auto main() -> int {
-
-  std::size_t ala;
+  size_t ala;
   std::string nye = "yo no soy ese";
 
   std::cout << sizeof ala << "\n";
