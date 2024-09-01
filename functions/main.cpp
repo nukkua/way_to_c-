@@ -99,17 +99,15 @@ int main() {
 
   // Pasando structs a funciones
   struct Rectangle r1 = {10, 10};
-  std::cout << "Los valores del struct antes de la funcion"
-            << "\t";
+  std::cout << "Los valores del struct antes de la funcion" << "\t";
 
-  std::cout << "lenght: " << r1.length << "\t"
-            << "breadth: " << r1.breadth << "\n";
+  std::cout << "lenght: " << r1.length << "\t" << "breadth: " << r1.breadth
+            << "\n";
 
   std::cout << "El area del rectangulo es " << area(&r1) << "\n";
 
-  std::cout << "Los valores del struct luego de la funcion"
-            << "\t";
+  std::cout << "Los valores del struct luego de la funcion" << "\t";
 
-  std::cout << "lenght: " << r1.length << "\t"
-            << "breadth: " << r1.breadth << "\n";
+  std::cout << "lenght: " << r1.length << "\t" << "breadth: " << r1.breadth
+            << "\n";
 }

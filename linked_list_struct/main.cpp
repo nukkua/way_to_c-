@@ -29,8 +29,7 @@ struct LinkedList {
 
   auto insert_last() -> void {
     Node *val = new Node();
-    std::cout << "Insert value at the end "
-              << "\n";
+    std::cout << "Insert value at the end " << "\n";
     std::cin >> val->x;
     if (head == nullptr) {
       head = val;
@@ -45,8 +44,7 @@ struct LinkedList {
 
   auto insert_front() -> void {
     Node *val = new Node();
-    std::cout << "Insert value at the front "
-              << "\n";
+    std::cout << "Insert value at the front " << "\n";
     std::cin >> val->x;
 
     val->next = head;
@@ -55,8 +53,7 @@ struct LinkedList {
 
   auto delete_node() -> void {
     int z = 0;
-    std::cout << "Insert the value of the node to delete"
-              << "\n";
+    std::cout << "Insert the value of the node to delete" << "\n";
 
     std::cin >> z;
 
