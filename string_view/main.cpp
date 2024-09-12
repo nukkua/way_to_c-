@@ -25,5 +25,9 @@ auto main() -> int {
   size_t pos = sv.find("std");
   std::cout << "Posición de 'std': " << pos << '\n';
 
+  int a = 10;
+  std::string stringsito = std::to_string(a); // convert int to string
+  int b = std::stoi(stringsito);              // convert string to int
+
   return 0;
 }

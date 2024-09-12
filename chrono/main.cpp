@@ -2,8 +2,6 @@
 #include <cmath>
 #include <iostream>
 
-#define eb emplace_back
-
 auto main() -> int {
 
   auto start = std::chrono::high_resolution_clock::now();
